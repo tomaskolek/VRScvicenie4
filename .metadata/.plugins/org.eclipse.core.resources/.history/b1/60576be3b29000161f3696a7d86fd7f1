@@ -1,6 +1,7 @@
 #include <stddef.h>
 #include "stm32l1xx.h"
 
+static __IO uint32_t TimingDelay;
 int i,j;
 
 void adc_init(void)			// inicalizujem ADC a GPIO
@@ -36,7 +37,7 @@ void adc_init(void)			// inicalizujem ADC a GPIO
   	ADC_SoftwareStartConv(ADC1);
   }
 
-void blikamLEDku(int tlacitko){
+int blikamLEDku(int tlacitko){
 	if (tlacitko == 0){
 		GPIO_ResetBits(GPIOA, GPIO_Pin_5);
 	}
@@ -68,6 +69,7 @@ void blikamLEDku(int tlacitko){
 				}
 		}
 	}
+	return 0;
 }
 
 int main(void)
