@@ -88,20 +88,24 @@ void adc_init(void)
   }
 
 int blikamLEDku(int tlacitko){
-	if (tlacitko == 0){
+	if (tlacitko = 0){
 		GPIO_ResetBits(GPIOA, GPIO_Pin_5);
 	}
-	else if (tlacitko == 1){
+	else if (tlacitko = 1){
 		GPIO_ToggleBits(GPIOA, GPIO_Pin_5);
+		Delay(1000);
 	}
-	else if (tlacitko == 2){
+	else if (tlacitko = 2){
 		GPIO_ToggleBits(GPIOA, GPIO_Pin_5);
+		Delay(2000);
 	}
-	else if (tlacitko == 3){
+	else if (tlacitko = 3){
 		GPIO_ToggleBits(GPIOA, GPIO_Pin_5);
+		Delay(3000);
 	}
-	else if (tlacitko == 4){
+	else if (tlacitko = 4){
 		GPIO_ToggleBits(GPIOA, GPIO_Pin_5);
+		Delay(4000);
 	}
 	return 0;
 }
@@ -109,6 +113,7 @@ int blikamLEDku(int tlacitko){
 int main(void)
 {
 	uint16_t AD_value;
+	int i = 0;
 
 	adc_init();
 
@@ -120,24 +125,21 @@ int main(void)
 
 		if ((AD_value>1980) && (AD_value<2100)){
 			blikamLEDku(1);
-			Delay(1000);
  	 	}
-		else if ((AD_value>2800) && (AD_value<2940)){
+		else if ((AD_value>2800) && (AD_value<2925)){
 			blikamLEDku(2);
-			Delay(2000);
  	 	}
 		else if ((AD_value>3440) && (AD_value<3480)){
 			blikamLEDku(3);
-			Delay(3000);
  	 	}
 		else if ((AD_value>3640) && (AD_value<3680)){
 			blikamLEDku(4);
-			Delay(4000);
  	 	}
 		else if ((AD_value>3900)){
 			blikamLEDku(0);
 		}
 	}
+}
   return 0;
 }
 

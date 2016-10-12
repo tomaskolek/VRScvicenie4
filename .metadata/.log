@@ -1055,3 +1055,445 @@ java.net.ConnectException: Connection refused: connect
 
 !ENTRY com.atollic.truestudio.productmanager 1 0 2016-10-11 11:40:13.050
 !MESSAGE Unloading product manager
+!SESSION 2016-10-12 19:49:44.992 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_102
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY com.atollic.truestudio.productmanager 1 0 2016-10-12 19:49:57.433
+!MESSAGE Loading product manager
+
+!ENTRY com.atollic.truestudio.productmanager 1 0 2016-10-12 19:49:57.790
+!MESSAGE OS info: Windows 10, 10.0
+
+!ENTRY TrueSTUDIO 1 0 2016-10-12 19:50:16.290
+!MESSAGE Target:ARM, Version:6.0.0, Build date: 20160823-1314, Installation dir:/C:/Program Files (x86)/Atollic/TrueSTUDIO for ARM 6.0.0/ide/
+
+!ENTRY TrueSTUDIO License 1 0 2016-10-12 19:50:17.639
+!MESSAGE Valid local features found: 0
+
+!ENTRY TrueSTUDIO License 1 0 2016-10-12 19:50:17.640
+!MESSAGE Valid network features found: 0
+
+!ENTRY TrueSTUDIO License 1 0 2016-10-12 19:50:17.640
+!MESSAGE License system initialized in 385ms
+
+!ENTRY TrueSTUDIO 1 0 2016-10-12 19:50:17.640
+!MESSAGE License numbers: 0 []
+
+!ENTRY TrueSTUDIO 1 0 2016-10-12 19:50:17.640
+!MESSAGE This installation is running as LITE
+
+!ENTRY org.eclipse.jface 2 0 2016-10-12 19:51:37.059
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2016-10-12 19:51:37.059
+!MESSAGE A conflict occurred for ALT+CTRL+T:
+Binding(ALT+CTRL+T,
+	ParameterizedCommand(Command(org.eclipse.team.svn.ui.command.EditPropertiesCommand,Show Properties,
+		,
+		Category(org.eclipse.team.svn.ui.command.category,SVN,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1f4709e,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+CTRL+T,
+	ParameterizedCommand(Command(org.eclipse.tm.terminal.connector.local.command.launch,Open Local Terminal on Selection,
+		,
+		Category(org.eclipse.tm.terminal.view.ui.commands.category,Terminal Commands,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1fa17b0,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY com.atollic.truestudio.integration.processorexpert 0 0 2016-10-12 19:52:04.247
+!MESSAGE Atollic TrueSTUDIO Processor Expert integration is up.
+
+!ENTRY edu.hawaii.ics.csdl.jupiter 1 0 2016-10-12 19:52:04.901
+!MESSAGE Code Review is up.
+
+!ENTRY org.eclipse.egit.ui 2 0 2016-10-12 19:52:09.562
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\tomas'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.atollic.hardwaredebug.stlink 4 0 2016-10-12 19:54:10.206
+!MESSAGE Failed to connect to GDB Server:
+
+!STACK 0
+java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.atollic.hardwaredebug.stlink.StLinkDebugHardware.authenticate(Unknown Source)
+	at com.atollic.hardwaredebug.stlink.StLinkDebugHardware.verifyServer(Unknown Source)
+	at com.atollic.hardwaredebug.launch.export.HardwareDebugUtil.startServer(Unknown Source)
+	at com.atollic.hardwaredebug.launch.DSFFinalLaunchSequence$1.execute(Unknown Source)
+	at org.eclipse.cdt.dsf.concurrent.Sequence.executeStep(Sequence.java:459)
+	at org.eclipse.cdt.dsf.concurrent.Sequence.run(Sequence.java:363)
+	at org.eclipse.cdt.dsf.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:63)
+	at org.eclipse.cdt.dsf.gdb.service.command.GDBControl.completeInitialization(GDBControl.java:432)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate$1.execute(GdbLaunchDelegate.java:218)
+	at org.eclipse.cdt.dsf.concurrent.Query.run(Query.java:177)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY com.atollic.hardwaredebug.stlink 4 0 2016-10-12 19:54:11.733
+!MESSAGE Preparing to receive...
+
+!ENTRY com.atollic.hardwaredebug.stlink 1 0 2016-10-12 19:54:11.734
+!MESSAGE Length ok
+
+
+!ENTRY com.atollic.hardwaredebug.stlink 4 0 2016-10-12 19:54:11.735
+!MESSAGE Sent answer
+
+
+!ENTRY com.atollic.hardwaredebug.stlink 4 0 2016-10-12 20:10:21.042
+!MESSAGE Failed to connect to GDB Server:
+
+!STACK 0
+java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.atollic.hardwaredebug.stlink.StLinkDebugHardware.authenticate(Unknown Source)
+	at com.atollic.hardwaredebug.stlink.StLinkDebugHardware.verifyServer(Unknown Source)
+	at com.atollic.hardwaredebug.launch.export.HardwareDebugUtil.startServer(Unknown Source)
+	at com.atollic.hardwaredebug.launch.DSFFinalLaunchSequence$1.execute(Unknown Source)
+	at org.eclipse.cdt.dsf.concurrent.Sequence.executeStep(Sequence.java:459)
+	at org.eclipse.cdt.dsf.concurrent.Sequence.run(Sequence.java:363)
+	at org.eclipse.cdt.dsf.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:63)
+	at org.eclipse.cdt.dsf.gdb.service.command.GDBControl.completeInitialization(GDBControl.java:432)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate$1.execute(GdbLaunchDelegate.java:218)
+	at org.eclipse.cdt.dsf.concurrent.Query.run(Query.java:177)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY com.atollic.hardwaredebug.stlink 4 0 2016-10-12 20:10:22.546
+!MESSAGE Preparing to receive...
+
+!ENTRY com.atollic.hardwaredebug.stlink 1 0 2016-10-12 20:10:22.547
+!MESSAGE Length ok
+
+
+!ENTRY com.atollic.hardwaredebug.stlink 4 0 2016-10-12 20:10:22.547
+!MESSAGE Sent answer
+
+
+!ENTRY com.atollic.hardwaredebug.stlink 4 0 2016-10-12 20:11:02.475
+!MESSAGE Failed to connect to GDB Server:
+
+!STACK 0
+java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.atollic.hardwaredebug.stlink.StLinkDebugHardware.authenticate(Unknown Source)
+	at com.atollic.hardwaredebug.stlink.StLinkDebugHardware.verifyServer(Unknown Source)
+	at com.atollic.hardwaredebug.launch.export.HardwareDebugUtil.startServer(Unknown Source)
+	at com.atollic.hardwaredebug.launch.DSFFinalLaunchSequence$1.execute(Unknown Source)
+	at org.eclipse.cdt.dsf.concurrent.Sequence.executeStep(Sequence.java:459)
+	at org.eclipse.cdt.dsf.concurrent.Sequence.run(Sequence.java:363)
+	at org.eclipse.cdt.dsf.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:63)
+	at org.eclipse.cdt.dsf.gdb.service.command.GDBControl.completeInitialization(GDBControl.java:432)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate$1.execute(GdbLaunchDelegate.java:218)
+	at org.eclipse.cdt.dsf.concurrent.Query.run(Query.java:177)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY com.atollic.hardwaredebug.stlink 4 0 2016-10-12 20:11:03.480
+!MESSAGE Preparing to receive...
+
+!ENTRY com.atollic.hardwaredebug.stlink 1 0 2016-10-12 20:11:03.481
+!MESSAGE Length ok
+
+
+!ENTRY com.atollic.hardwaredebug.stlink 4 0 2016-10-12 20:11:03.482
+!MESSAGE Sent answer
+
+
+!ENTRY com.atollic.hardwaredebug.stlink 4 0 2016-10-12 20:13:47.183
+!MESSAGE Failed to connect to GDB Server:
+
+!STACK 0
+java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.atollic.hardwaredebug.stlink.StLinkDebugHardware.authenticate(Unknown Source)
+	at com.atollic.hardwaredebug.stlink.StLinkDebugHardware.verifyServer(Unknown Source)
+	at com.atollic.hardwaredebug.launch.export.HardwareDebugUtil.startServer(Unknown Source)
+	at com.atollic.hardwaredebug.launch.DSFFinalLaunchSequence$1.execute(Unknown Source)
+	at org.eclipse.cdt.dsf.concurrent.Sequence.executeStep(Sequence.java:459)
+	at org.eclipse.cdt.dsf.concurrent.Sequence.run(Sequence.java:363)
+	at org.eclipse.cdt.dsf.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:63)
+	at org.eclipse.cdt.dsf.gdb.service.command.GDBControl.completeInitialization(GDBControl.java:432)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate$1.execute(GdbLaunchDelegate.java:218)
+	at org.eclipse.cdt.dsf.concurrent.Query.run(Query.java:177)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY com.atollic.hardwaredebug.stlink 4 0 2016-10-12 20:13:48.688
+!MESSAGE Preparing to receive...
+
+!ENTRY com.atollic.hardwaredebug.stlink 1 0 2016-10-12 20:13:48.689
+!MESSAGE Length ok
+
+
+!ENTRY com.atollic.hardwaredebug.stlink 4 0 2016-10-12 20:13:48.690
+!MESSAGE Sent answer
+
+
+!ENTRY com.atollic.hardwaredebug.stlink 4 0 2016-10-12 20:18:34.966
+!MESSAGE Failed to connect to GDB Server:
+
+!STACK 0
+java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.atollic.hardwaredebug.stlink.StLinkDebugHardware.authenticate(Unknown Source)
+	at com.atollic.hardwaredebug.stlink.StLinkDebugHardware.verifyServer(Unknown Source)
+	at com.atollic.hardwaredebug.launch.export.HardwareDebugUtil.startServer(Unknown Source)
+	at com.atollic.hardwaredebug.launch.DSFFinalLaunchSequence$1.execute(Unknown Source)
+	at org.eclipse.cdt.dsf.concurrent.Sequence.executeStep(Sequence.java:459)
+	at org.eclipse.cdt.dsf.concurrent.Sequence.run(Sequence.java:363)
+	at org.eclipse.cdt.dsf.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:63)
+	at org.eclipse.cdt.dsf.gdb.service.command.GDBControl.completeInitialization(GDBControl.java:432)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate$1.execute(GdbLaunchDelegate.java:218)
+	at org.eclipse.cdt.dsf.concurrent.Query.run(Query.java:177)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY com.atollic.hardwaredebug.stlink 4 0 2016-10-12 20:18:35.970
+!MESSAGE Preparing to receive...
+
+!ENTRY com.atollic.hardwaredebug.stlink 1 0 2016-10-12 20:18:35.971
+!MESSAGE Length ok
+
+
+!ENTRY com.atollic.hardwaredebug.stlink 4 0 2016-10-12 20:18:35.971
+!MESSAGE Sent answer
+
+
+!ENTRY com.atollic.hardwaredebug.stlink 4 0 2016-10-12 20:20:39.473
+!MESSAGE Failed to connect to GDB Server:
+
+!STACK 0
+java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.atollic.hardwaredebug.stlink.StLinkDebugHardware.authenticate(Unknown Source)
+	at com.atollic.hardwaredebug.stlink.StLinkDebugHardware.verifyServer(Unknown Source)
+	at com.atollic.hardwaredebug.launch.export.HardwareDebugUtil.startServer(Unknown Source)
+	at com.atollic.hardwaredebug.launch.DSFFinalLaunchSequence$1.execute(Unknown Source)
+	at org.eclipse.cdt.dsf.concurrent.Sequence.executeStep(Sequence.java:459)
+	at org.eclipse.cdt.dsf.concurrent.Sequence.run(Sequence.java:363)
+	at org.eclipse.cdt.dsf.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:63)
+	at org.eclipse.cdt.dsf.gdb.service.command.GDBControl.completeInitialization(GDBControl.java:432)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate$1.execute(GdbLaunchDelegate.java:218)
+	at org.eclipse.cdt.dsf.concurrent.Query.run(Query.java:177)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY com.atollic.hardwaredebug.stlink 4 0 2016-10-12 20:20:40.476
+!MESSAGE Preparing to receive...
+
+!ENTRY com.atollic.hardwaredebug.stlink 1 0 2016-10-12 20:20:40.477
+!MESSAGE Length ok
+
+
+!ENTRY com.atollic.hardwaredebug.stlink 4 0 2016-10-12 20:20:40.477
+!MESSAGE Sent answer
+
+
+!ENTRY com.atollic.hardwaredebug.stlink 4 0 2016-10-12 20:21:25.174
+!MESSAGE Failed to connect to GDB Server:
+
+!STACK 0
+java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.atollic.hardwaredebug.stlink.StLinkDebugHardware.authenticate(Unknown Source)
+	at com.atollic.hardwaredebug.stlink.StLinkDebugHardware.verifyServer(Unknown Source)
+	at com.atollic.hardwaredebug.launch.export.HardwareDebugUtil.startServer(Unknown Source)
+	at com.atollic.hardwaredebug.launch.DSFFinalLaunchSequence$1.execute(Unknown Source)
+	at org.eclipse.cdt.dsf.concurrent.Sequence.executeStep(Sequence.java:459)
+	at org.eclipse.cdt.dsf.concurrent.Sequence.run(Sequence.java:363)
+	at org.eclipse.cdt.dsf.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:63)
+	at org.eclipse.cdt.dsf.gdb.service.command.GDBControl.completeInitialization(GDBControl.java:432)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate$1.execute(GdbLaunchDelegate.java:218)
+	at org.eclipse.cdt.dsf.concurrent.Query.run(Query.java:177)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY com.atollic.hardwaredebug.stlink 4 0 2016-10-12 20:21:26.677
+!MESSAGE Preparing to receive...
+
+!ENTRY com.atollic.hardwaredebug.stlink 1 0 2016-10-12 20:21:26.678
+!MESSAGE Length ok
+
+
+!ENTRY com.atollic.hardwaredebug.stlink 4 0 2016-10-12 20:21:26.678
+!MESSAGE Sent answer
+
+
+!ENTRY com.atollic.hardwaredebug.stlink 4 0 2016-10-12 20:22:37.553
+!MESSAGE Failed to connect to GDB Server:
+
+!STACK 0
+java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.atollic.hardwaredebug.stlink.StLinkDebugHardware.authenticate(Unknown Source)
+	at com.atollic.hardwaredebug.stlink.StLinkDebugHardware.verifyServer(Unknown Source)
+	at com.atollic.hardwaredebug.launch.export.HardwareDebugUtil.startServer(Unknown Source)
+	at com.atollic.hardwaredebug.launch.DSFFinalLaunchSequence$1.execute(Unknown Source)
+	at org.eclipse.cdt.dsf.concurrent.Sequence.executeStep(Sequence.java:459)
+	at org.eclipse.cdt.dsf.concurrent.Sequence.run(Sequence.java:363)
+	at org.eclipse.cdt.dsf.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:63)
+	at org.eclipse.cdt.dsf.gdb.service.command.GDBControl.completeInitialization(GDBControl.java:432)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate$1.execute(GdbLaunchDelegate.java:218)
+	at org.eclipse.cdt.dsf.concurrent.Query.run(Query.java:177)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY com.atollic.hardwaredebug.stlink 4 0 2016-10-12 20:22:38.557
+!MESSAGE Preparing to receive...
+
+!ENTRY com.atollic.hardwaredebug.stlink 1 0 2016-10-12 20:22:38.558
+!MESSAGE Length ok
+
+
+!ENTRY com.atollic.hardwaredebug.stlink 4 0 2016-10-12 20:22:38.558
+!MESSAGE Sent answer
+
+
+!ENTRY com.atollic.hardwaredebug.stlink 4 0 2016-10-12 20:25:19.880
+!MESSAGE Failed to connect to GDB Server:
+
+!STACK 0
+java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.atollic.hardwaredebug.stlink.StLinkDebugHardware.authenticate(Unknown Source)
+	at com.atollic.hardwaredebug.stlink.StLinkDebugHardware.verifyServer(Unknown Source)
+	at com.atollic.hardwaredebug.launch.export.HardwareDebugUtil.startServer(Unknown Source)
+	at com.atollic.hardwaredebug.launch.DSFFinalLaunchSequence$1.execute(Unknown Source)
+	at org.eclipse.cdt.dsf.concurrent.Sequence.executeStep(Sequence.java:459)
+	at org.eclipse.cdt.dsf.concurrent.Sequence.run(Sequence.java:363)
+	at org.eclipse.cdt.dsf.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:63)
+	at org.eclipse.cdt.dsf.gdb.service.command.GDBControl.completeInitialization(GDBControl.java:432)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate$1.execute(GdbLaunchDelegate.java:218)
+	at org.eclipse.cdt.dsf.concurrent.Query.run(Query.java:177)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY com.atollic.hardwaredebug.stlink 4 0 2016-10-12 20:25:20.884
+!MESSAGE Preparing to receive...
+
+!ENTRY com.atollic.hardwaredebug.stlink 1 0 2016-10-12 20:25:20.885
+!MESSAGE Length ok
+
+
+!ENTRY com.atollic.hardwaredebug.stlink 4 0 2016-10-12 20:25:20.885
+!MESSAGE Sent answer
+

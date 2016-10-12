@@ -47,13 +47,6 @@ static __IO uint32_t TimingDelay;
 **===========================================================================
 */
 
-void Delay(__IO uint32_t nTime)
-{
-  TimingDelay = nTime;
-
-  while(TimingDelay != 0);
-}
-
 void adc_init(void)
   {
   	GPIO_InitTypeDef GPIO_InitStructure;
@@ -93,6 +86,10 @@ int blikamLEDku(int tlacitko){
 	}
 	else if (tlacitko == 1){
 		GPIO_ToggleBits(GPIOA, GPIO_Pin_5);
+		for (int i=1; i<= 500; i++){
+			for (int j=1; j<= 500; j++){
+				}
+		}
 	}
 	else if (tlacitko == 2){
 		GPIO_ToggleBits(GPIOA, GPIO_Pin_5);
@@ -118,23 +115,31 @@ int main(void)
 
 		AD_value=ADC_GetConversionValue(ADC1);
 
-		if ((AD_value>1980) && (AD_value<2100)){
+		if ((AD_value>=1980) && (AD_value<=2100)){
 			blikamLEDku(1);
-			Delay(1000);
  	 	}
-		else if ((AD_value>2800) && (AD_value<2940)){
+		else if ((AD_value>=2800) && (AD_value<=2940)){
 			blikamLEDku(2);
-			Delay(2000);
+			for (int i=1; i<= 1000; i++){
+				for (int j=1; j<= 1000; j++){
+					}
+			}
  	 	}
-		else if ((AD_value>3440) && (AD_value<3480)){
+		else if ((AD_value>=3440) && (AD_value<=3480)){
 			blikamLEDku(3);
-			Delay(3000);
+			for (int i=1; i<= 1500; i++){
+				for (int j=1; j<= 1500; j++){
+					}
+			}
  	 	}
-		else if ((AD_value>3640) && (AD_value<3680)){
+		else if ((AD_value>=3640) && (AD_value<=3680)){
 			blikamLEDku(4);
-			Delay(4000);
+			for (int i=1; i<= 500; i++){
+				for (int j=1; j<= 500; j++){
+					}
+			}
  	 	}
-		else if ((AD_value>3900)){
+		else if ((AD_value>=3900)){
 			blikamLEDku(0);
 		}
 	}

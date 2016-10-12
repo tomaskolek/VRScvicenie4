@@ -120,19 +120,19 @@ int main(void)
 
 		if ((AD_value>1980) && (AD_value<2100)){
 			blikamLEDku(1);
-			Delay(1000);
+			Delay(100);
  	 	}
 		else if ((AD_value>2800) && (AD_value<2940)){
 			blikamLEDku(2);
-			Delay(2000);
+			Delay(200);
  	 	}
 		else if ((AD_value>3440) && (AD_value<3480)){
 			blikamLEDku(3);
-			Delay(3000);
+			Delay(300);
  	 	}
 		else if ((AD_value>3640) && (AD_value<3680)){
 			blikamLEDku(4);
-			Delay(4000);
+			Delay(400);
  	 	}
 		else if ((AD_value>3900)){
 			blikamLEDku(0);
